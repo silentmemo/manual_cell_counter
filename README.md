@@ -5,16 +5,16 @@ Development of a manual cell counter that is less noisy and more intelligent.
 __Note : This is a STEM project mostly for entertainment and education.__ 
 Counting cell manually using a hemocytometer is a very common task in a cell biology lab. Counting cell on a hemocytometer involve several steps. 
 
-1. prepare (dilute, stain) the biological sample (e.g. suspension of cells / particles)
+1. prepare (dilute, stain) the biological sample (e.g., suspension of cells / particles)
 2. load the sample on a hemocytometer
 3. load the hemocytometer on a microscope 
-4. count the cells/ particles in fixed-volume "squares" on the hemocytometer
+4. count the cells/ particles in fixed volume "squares" on the hemocytometer
 5. calculate the concentrations, viability of the original samples
 
-These step when well prepared, usually won't take more than 10 minutes to perform. Sometimes, however, it is desirable to get this step done as quick as possible. When available, using an automatic cell counter makes the most sense. However, not everyone has immediate access to one, or it may requires the use of consumables which will racks up operation-cost. 
-To assist manual cell counting, typically a tally counter will be used. It makes a clicky sound  and a tactile feedback when pressed. If the tally counter make a loud clicky sound, it can be a source of noise when used frequently. Also, counting different squares or live/dead cells or making amendment on hemocytometers requires a reset on the tally counter, which forces user to either remember the tally or spent time marking down the numbers. These features makes the cell counting task a lot less enjoyable. 
+These step when well prepared, usually won't take more than 10 minutes to perform. Sometimes, however, it is desirable to get this step done as quick as possible. When available, using an automatic cell counter makes the most sense. However, not everyone has immediate access to one, or it may require the use of consumables which will racks up operation-cost. 
+To assist manual cell counting, typically a tally counter will be used. It makes a clicky sound and tactile feedback when pressed. If the tally counter makes a loud clicky sound, it can be a source of noise when used frequently. Also, counting different squares or live/dead cells or making amendment on hemocytometers requires a reset on the tally counter, which forces user to either remember the tally or spent time marking down the numbers. These features make the cell counting task a lot less enjoyable. 
 
-This project fill in the unique niche, to make manual cell counting a bit more efficient by outsourcing the calculation to an accessible and affordable computer chip, and a bit less annoying by making use of more silent switches and light as the feedback which is non-audible. 
+This project fills in the unique niche, to make manual cell counting a bit more efficient by outsourcing the calculation to an accessible and affordable computer chip, and a bit less annoying by making use of more silent switches and light as the feedback which is non-audible. 
 
 ---
 
@@ -23,7 +23,7 @@ The cell counter is built using [Adafruit MacroPad RP2040](https://www.adafruit.
 
 - The RP2040 chip is programmable.  
 - It contains many keys which is required.
-- It contains a display to show the calculation result in realtime. 
+- It contains a display to show the calculation result in real-time. 
 - The switches are "hot-swappable", lifting the hurdles of requiring soldering. 
 - Different switches can be used to provide tactile feedback. (not used in this project)
 - The circuit board contains all the components, making it easy to assemble
@@ -38,16 +38,16 @@ The RP2040 is loaded with CircuitPython. A [custom python scripts]("./src/code.p
 1. Connect the board to power via the USB-c connector on the board. 
 2. Verify that the setting is: "LIVE" and "ADD" on the MacroPad's display (white and green LED at the bottom row of keys) 
 3. Count living cells on squares, starting from Top-left corner, then repeats to other corners. (TL -> TR -> BL -> BR)
-   1. press corresponding switch once,the board will became brighter, a red light blink on the pressed button
+   1. press corresponding switch once, the board will become brighter, a red-light blink on the pressed button
 4. To count dead cell, press the switch with white LED light once, the led light should turn blue, and "DEAD" should appear in place of "LIVE". 
 5. Count dead cells on squares, starting from Top-left corner, then repeats to other corners. (TL -> TR -> BL -> BR)
-   1. press corresponding switch once, the board will became brighter, a red light blink on the pressed button
+   1. press corresponding switch once, the board will become brighter, a red-light blink on the pressed button
 #### Adjusting dilution factor 
 Turn the rotary switch to adjust the dilution factor of the sample. "DF" will be changed accordingly on the display.
 #### Adjusting tally on corner(s) 
-If needed to reduce the tally on any corner, press the switch with green LED. It should turn red, and "MINUS" should appear in place if "ADD". Press corresponding switch once to reduce tally at corresponding corner by one. Press the switch with red LED to toggle back to "ADD" state. 
+If needed to reduce the tally on any corner, press the switch with green LED. It should turn red, and "MINUS" should appear in place of "ADD". Press corresponding switch once to reduce tally at corresponding corner by one. Press the switch with red LED to toggle back to "ADD" state. 
 #### Reset the MacroPad
-Press the rotary switch once, the MacroPad should beep once and the display will be rest. __Verify that the setting is: "LIVE" and "ADD" on the MacroPad's display__ before next count. 
+Press the rotary switch once, the MacroPad should beep once, and the display will be rest. __Verify that the setting is: "LIVE" and "ADD" on the MacroPad's display__ before next count. 
 
 ### MacroPad Result interpretation
 
