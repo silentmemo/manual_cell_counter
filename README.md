@@ -29,7 +29,7 @@ The cell counter is built using [Adafruit MacroPad RP2040](https://www.adafruit.
 - Different switches can be used to provide tactile feedback. (not used in this project)
 - The circuit board contains all the components, making it easy to assemble
 
-The RP2040 is loaded with CircuitPython. A [custom python scripts]("./src/code.py") was written to add tallying and calculation functions on the MacroPad.  
+The RP2040 is loaded with CircuitPython. A [custom python scripts](/src/code.py) was written to add tallying and calculation functions on the MacroPad.  
 
 ---
 
