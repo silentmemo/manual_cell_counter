@@ -3,6 +3,7 @@ Development of a manual cell counter that is less noisy and more intelligent.
 
 ## Background and Motivation
 __Note : This is a STEM project mostly for entertainment and education.__ 
+
 Counting cell manually using a hemocytometer is a very common task in a cell biology lab. Counting cell on a hemocytometer involve several steps. 
 
 1. prepare (dilute, stain) the biological sample (e.g., suspension of cells / particles)
