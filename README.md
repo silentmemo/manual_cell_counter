@@ -48,7 +48,7 @@ Turn the rotary switch to adjust the dilution factor of the sample. "DF" will be
 #### Adjusting tally on corner(s) 
 If needed to reduce the tally on any corner, press the switch with green LED. It should turn red, and "MINUS" should appear in place of "ADD". Press corresponding switch once to reduce tally at corresponding corner by one. Press the switch with red LED to toggle back to "ADD" state. 
 #### Reset the MacroPad
-Press the rotary switch once, the MacroPad should beep once, and the display will be rest. __Verify that the setting is: "LIVE" and "ADD" on the MacroPad's display__ before next count. 
+Press the rotary switch once, the MacroPad should beep once, and the display will be reset. __Verify that the setting is: "LIVE" and "ADD" on the MacroPad's display__ before next count. 
 
 ### MacroPad Result interpretation
 
