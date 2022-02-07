@@ -246,5 +246,7 @@ while True:
         layout = initiate_layout()
         macropad.pixels[9]=(255, 255, 255)
         macropad.pixels[10]=(20, 239, 20)
+        ld_flag = flag("LIVE","DEAD",(255, 255, 255),(0, 0, 255))
+        add_minus_flag =flag("ADD","MINUS",(20, 239, 20),(239, 20, 20))
         main_group.insert(1,layout)
 
