@@ -244,5 +244,7 @@ while True:
         main_group.pop(1)
         labels = initiate_labels()
         layout = initiate_layout()
+        macropad.pixels[9]=(255, 255, 255)
+        macropad.pixels[10]=(20, 239, 20)
         main_group.insert(1,layout)
 
